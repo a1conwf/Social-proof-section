@@ -1,0 +1,239 @@
+@import "./variables";
+@import "./globals";
+
+//Container
+.container {
+    margin: 8rem auto 10rem;
+}
+
+//Bottom background pattern
+.bg__bottom .desktop__img {
+    display: none;
+    z-index: -1;
+}
+
+//Wrapper
+.wrapper {
+    max-width: 327px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+//Hero section
+.hero {
+    margin-bottom: 4rem;
+
+    h1 {
+        margin-bottom: 1.8rem;
+        letter-spacing: -1.14px;
+    }
+
+    p {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+//Raitings section
+.raitings {
+    margin-bottom: 5rem;
+
+    &__container {
+        padding: 1.6rem 0;
+        margin-bottom: 1.6rem;
+        background-color: $lightPink;
+        border-radius: 0.8rem;
+
+        ul li:first-child {
+            margin-bottom: 1rem;
+        }
+
+        ul li img {
+            width: 16px;
+            margin-right: 0.845rem;
+        }
+
+        ul li:last-child {
+            font-weight: 700;
+            color: $violet;
+        }
+    }
+
+    &__container:last-child {
+        margin-bottom: 0;
+    }
+}
+
+//Testimonials section
+.testimonials {
+    text-align: left;
+
+    &__container {
+        padding: 4rem 3.2rem 3.2rem;
+        background-color: $violet;
+        border-radius: 0.8rem;
+        margin-bottom: 1.6rem;
+
+        .testimonials__person {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.6rem;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 2.3rem;
+            }
+
+            &__info {
+                ul li:first-child {
+                    font-weight: 700;
+                    color: #fff;
+                    margin-bottom: 0.5rem;
+                }
+
+                ul li:last-child {
+                    font-weight: 400;
+                    color: $pink;
+                }
+            }
+        }
+
+        p {
+            max-width: 263px;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            letter-spacing: -0.23px;
+            color: #fff;
+        }
+    }
+
+    &__container:last-child {
+        margin-bottom: 0;
+    }
+}
+
+//Media queries
+@media screen and (min-width: 992px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    //Container
+    .container {
+        margin: 0;
+    }
+
+    //Bottom background pattern
+    .bg__bottom .desktop__img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    //Wrapper
+    .wrapper {
+        max-width: 1100px;
+        text-align: left;
+    }
+
+    //Upper container
+    .upper__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7.2rem;
+    }
+
+    //Hero section
+    .hero {
+        max-width: 445px;
+
+        h1 {
+            font-size: 4.8rem;
+            line-height: 4.8rem;
+            letter-spacing: -1.71px;
+            margin-bottom: 0.6rem;
+        }
+
+        p {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+    }
+
+    //Raitings section
+    .raitings {
+        margin-bottom: 0;
+
+        &__container {
+            padding: 2.1rem 2.6rem 2rem;
+
+            ul {
+                display: flex;
+                align-items: center;
+            }
+
+            ul li:first-child {
+                margin-bottom: 0;
+                margin-right: 3.2rem;
+            }
+        }
+
+        &__container:first-child {
+            margin-right: 9.6rem;
+        }
+
+        &__container:nth-child(2) {
+            margin: 0 4.8rem 1.6rem;
+        }
+
+        &__container:last-child {
+            margin-left: 9.6rem;
+        }
+    }
+
+    //Testimonials section
+    .testimonials {
+        display: flex;
+
+        &__container {
+            padding: 4rem 3.2rem 4rem;
+            margin-bottom: 0;
+            margin-right: 3rem;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        &__container:first-child {
+            margin-bottom: 3.2rem;
+        }
+
+        &__container:nth-child(2) {
+            margin: 1.6rem 3rem 1.6rem 0;
+        }
+
+        &__container:last-child {
+            margin-right: 0;
+            margin-top: 3.2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    //Raitings section
+    .raitings {
+        &__container {
+            padding: 2.1rem 6rem 2rem 3.2rem;
+        }
+    }
+}

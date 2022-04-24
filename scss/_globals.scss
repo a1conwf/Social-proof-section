@@ -1,0 +1,48 @@
+@import "./variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -1.14px;
+    font-weight: 700;
+    color: $violet;
+}
+
+p {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: $lightViolet;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}

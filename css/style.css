@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  font-family: 'League Spartan', sans-serif;
+  background-image: url("../images/bg-pattern-top-desktop.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: -1.14px;
+  font-weight: 700;
+  color: #512051;
+}
+
+p {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #927B91;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  margin: 8rem auto 10rem;
+}
+
+.bg__bottom .desktop__img {
+  display: none;
+  z-index: -1;
+}
+
+.wrapper {
+  max-width: 327px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero {
+  margin-bottom: 4rem;
+}
+
+.hero h1 {
+  margin-bottom: 1.8rem;
+  letter-spacing: -1.14px;
+}
+
+.hero p {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.raitings {
+  margin-bottom: 5rem;
+}
+
+.raitings__container {
+  padding: 1.6rem 0;
+  margin-bottom: 1.6rem;
+  background-color: #F7F2F7;
+  border-radius: 0.8rem;
+}
+
+.raitings__container ul li:first-child {
+  margin-bottom: 1rem;
+}
+
+.raitings__container ul li img {
+  width: 16px;
+  margin-right: 0.845rem;
+}
+
+.raitings__container ul li:last-child {
+  font-weight: 700;
+  color: #512051;
+}
+
+.raitings__container:last-child {
+  margin-bottom: 0;
+}
+
+.testimonials {
+  text-align: left;
+}
+
+.testimonials__container {
+  padding: 4rem 3.2rem 3.2rem;
+  background-color: #512051;
+  border-radius: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.testimonials__container .testimonials__person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.6rem;
+}
+
+.testimonials__container .testimonials__person img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 2.3rem;
+}
+
+.testimonials__container .testimonials__person__info ul li:first-child {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials__container .testimonials__person__info ul li:last-child {
+  font-weight: 400;
+  color: #EE69A4;
+}
+
+.testimonials__container p {
+  max-width: 263px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: -0.23px;
+  color: #fff;
+}
+
+.testimonials__container:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container {
+    margin: 0;
+  }
+  .bg__bottom .desktop__img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .wrapper {
+    max-width: 1100px;
+    text-align: left;
+  }
+  .upper__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 7.2rem;
+  }
+  .hero {
+    max-width: 445px;
+  }
+  .hero h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    letter-spacing: -1.71px;
+    margin-bottom: 0.6rem;
+  }
+  .hero p {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .raitings {
+    margin-bottom: 0;
+  }
+  .raitings__container {
+    padding: 2.1rem 2.6rem 2rem;
+  }
+  .raitings__container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .raitings__container ul li:first-child {
+    margin-bottom: 0;
+    margin-right: 3.2rem;
+  }
+  .raitings__container:first-child {
+    margin-right: 9.6rem;
+  }
+  .raitings__container:nth-child(2) {
+    margin: 0 4.8rem 1.6rem;
+  }
+  .raitings__container:last-child {
+    margin-left: 9.6rem;
+  }
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials__container {
+    padding: 4rem 3.2rem 4rem;
+    margin-bottom: 0;
+    margin-right: 3rem;
+  }
+  .testimonials__container p {
+    max-width: 100%;
+  }
+  .testimonials__container:first-child {
+    margin-bottom: 3.2rem;
+  }
+  .testimonials__container:nth-child(2) {
+    margin: 1.6rem 3rem 1.6rem 0;
+  }
+  .testimonials__container:last-child {
+    margin-right: 0;
+    margin-top: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .raitings__container {
+    padding: 2.1rem 6rem 2rem 3.2rem;
+  }
+}
