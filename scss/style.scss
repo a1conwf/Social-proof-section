@@ -52,11 +52,6 @@
             width: 16px;
             margin-right: 0.845rem;
         }
-
-        ul li:last-child {
-            font-weight: 700;
-            color: $violet;
-        }
     }
 
     &__container:last-child {
@@ -87,14 +82,7 @@
             }
 
             &__info {
-                ul li:first-child {
-                    font-weight: 700;
-                    color: #fff;
-                    margin-bottom: 0.5rem;
-                }
-
                 ul li:last-child {
-                    font-weight: 400;
                     color: $pink;
                 }
             }

@@ -42,7 +42,18 @@ ul {
     padding: 0;
 }
 
-ul li {
+h2,
+h3 {
+    margin: 0;
     font-size: 1.3rem;
+    font-weight: 700;
     line-height: 1.5rem;
+}
+
+h2 {
+    color: $violet;
+}
+
+h3 {
+    color: #fff;
 }
